@@ -1,0 +1,618 @@
+body{
+    background: #F2F5F0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    
+}
+
+.menu{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+  
+.menu-item a{
+    position: relative;
+    color: #3C393B;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 40px;
+    text-decoration: none;
+    transition: .4s;
+}
+  
+.menu-item a::before{
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #FFC0D9;
+    transition: .3s;
+}
+  
+.menu-item a:hover::before{
+    width: 100%;
+}
+
+.menu-item a:hover{
+    color: #FFC0D9;
+}
+
+.logo{
+    width: 138px;
+    height: auto;
+    display: flex;
+    cursor: pointer;
+}
+
+.header{
+    padding: 145px 223px;
+    position: relative;
+    display: flex;
+}
+
+.melisa_nails{
+    position: relative;
+    display: flex;
+    height: 130px;
+    color: #3C393B;
+    font-family: 'Poppins', sans-serif;
+    font-size: 65px;
+    font-weight: 600;
+}
+
+
+.header > .text_hd > p{
+    position: relative;
+    display: flex;
+    width: 309px;
+    color: #3C393B;
+    font-family: 'Poppins', sans-serif;
+    font-size: 34px;
+    font-weight: 500;
+    margin-top: -50px;
+}
+
+.button_hd{
+    position: absolute;
+    display: flex;
+    gap: 15px;
+}
+
+.program_bt{
+    position: relative;
+    display: flex;
+    padding: 15px 20px;
+    border-radius: 8px;
+    color: #3C393B;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    gap: 3px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 10px;
+    cursor: pointer;
+    box-shadow: 0px 0px 4.7px 0px rgba(0, 0, 0, 0.50);
+    background: linear-gradient(to right, #e9aec5 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    text-decoration: none;
+}
+
+.preturi_bt{
+    position: relative;
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 0px 0px 4.7px 0px rgba(0, 0, 0, 0.50);
+    color: #3C393B;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    gap: 3px;
+    font-size: 18px;
+    font-style: normal;
+    padding: 15px 20px;
+    font-weight: 600;
+    margin-top: 10px;
+    cursor: pointer;
+    background: linear-gradient(to right, #e9aec5 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all .5s ease-out;
+    text-decoration: none;
+}
+
+.preturi_bt:hover{
+    background-position: left;
+    color: #F2F5F0;
+}
+
+.program_bt:hover{
+    background-position: left;
+    color: #F2F5F0;
+}
+
+.header_img{
+    position: absolute;
+    display: flex;
+    top: 0;
+    right: 0;
+}
+
+.header_img img{
+    position: relative;
+    margin-right: 100px;
+    margin-top: 40px;
+    width: 750px;
+    height: auto;
+}
+
+/*Information Box*/
+
+.medical_option{
+    position: relative;
+    padding: 100px;
+    margin-top: 100px;
+}
+
+.medical_title > h1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    color: #3C393B;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.medical_title > p{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #B0B0B2;
+    font-size: 20px;
+}
+
+.medical-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height: 50vh;
+    color: #3C393B;
+}
+
+.medical-plan{
+    flex: 1;
+    max-width: 350px;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    transition: .5s;
+    background-color: #F2F5F0;
+}
+
+.medical-plan:hover{
+    transform: translateY(-32px);
+    background-color: rgb(233, 174, 197 , 0.5);
+    box-shadow: 0px 5px 4.7px 5px rgba(165, 123, 139, 0.5);
+}
+
+.medical-icon{
+    font-size: 55px;
+    margin-bottom: 25px;
+}
+
+.plan-info{
+    color: #3C393B;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.plan-title{
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+.plan-bt{
+    background-color: transparent;
+    border: 2px solid #3C393B;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    line-height: 50px;
+    
+}
+
+/*Footer*/
+
+.footer-bar{
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_info{
+    position: absolute;
+    left: 0;
+    padding: 0px 200px;
+    display: flex;
+    color: #3C393B;
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+}
+  
+.footer-bar > .footer-container > a{
+    color: #3C393B;
+    font-size: 24px;
+    text-indent: 12px;
+    transition: 0.3s;
+}
+  
+.footer-bar > .footer-container > a:hover{
+    color: #FFC0D9;
+}
+
+/*Nails Price Page*/
+
+.nails_option{
+    position: relative;
+    padding: 100px;
+    margin-top: 10px;
+}
+
+.nails_title > h1{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    color: #3C393B;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.nails_title > p{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #B0B0B2;
+    font-size: 20px;
+}
+
+.nails-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    height: 50vh;
+    color: #3C393B;
+}
+
+.nails-plan{
+    flex: 1;
+    max-width: 350px;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    transition: .5s;
+    background-color: #F2F5F0;
+}
+
+.nails-plan:hover{
+    transform: scale(1.1);
+    background-color: rgb(233, 174, 197 , 0.5);
+    box-shadow: 0px 5px 4.7px 5px rgba(165, 123, 139, 0.5);
+}
+
+.nails-icon{
+    font-size: 55px;
+    margin-bottom: 25px;
+}
+
+.nails-plan-info{
+    color: #3C393B;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.nails-plan-title{
+    margin-bottom: 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+}
+
+.nails-plan-bt{
+    background-color: transparent;
+    border: 2px solid #3C393B;
+    padding: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    line-height: 50px;
+    transition: .3s;
+}
+
+.nails-plan-bt:hover{
+    background-color: #FFC0D9;
+}
+
+/*Contact Page*/
+
+.information_box{
+    position: relative;
+
+}
+
+.information_box .contact_me{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3C393B;
+    font-family: 'Poppins';
+    font-size: 45px;
+    font-weight: 600;
+}
+
+.book-text{
+    position: relative;
+    padding: 50px 200px;
+    color: #3C393B;
+    font-family: 'Poppins';
+    font-weight: 500;
+}
+
+.book-text .adress_book{
+    margin-bottom: 90px;
+}
+
+.book-text .adress_book .adresa{
+    font-size: 64px;
+}
+
+.book-text .adress_book .street_book{
+    width: 330px;
+    height: auto;
+    font-size: 29px;
+    cursor: pointer;
+    color: #3C393B;
+    transition: .3s;
+}
+
+.book-text .adress_book .street_book:hover{
+    color: #e9aec5;
+}
+
+.book-text .instagram .instagram_text{
+    font-size: 64px;
+}
+
+.book-text .instagram .instagram_tag{
+    font-size: 29px;
+    cursor: pointer;
+    color: #3C393B;
+    transition: .3s;
+}
+
+.book-text .instagram .instagram_tag:hover{
+    color: #e9aec5;
+}
+
+.information_box .contact_image{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: -100;
+    padding: 90px 90px;
+}
+
+
+
+
+/* For screens up to 600px width */
+@media screen and (max-width: 600px) {
+
+    .menu {
+    padding: 20px; /* Adjusted padding */
+}
+
+.menu-item a {
+    font-size: 16px; /* Adjusted font size */
+    margin-left: 15px; /* Reduced margin */
+}
+
+.logo {
+    width: 100px; /* Adjusted logo size */
+}
+
+/* Header */
+.header {
+    position: relative;
+    padding: 30px 20px; /* Adjusted padding */
+}
+
+.melisa_nails {
+    font-size: 50px; /* Adjusted font size */
+}
+
+.header > .text_hd > p {
+    font-size: 38px; /* Adjusted font size */
+    margin-top: -70px; /* Reduced margin */
+}
+
+.header_img img{
+    right: 0%;
+    width: 60%; /* Image width set to maximum */
+    height: auto;
+    margin-left: 230px;
+    margin-top: 50px;
+    z-index: -100;
+}
+
+/* Information Box - Medical Option */
+.medical_option {
+    padding: 70px 20px; /* Adjusted padding */
+    margin-top: 70px; /* Adjusted margin */
+}
+
+.medical_title > h1 {
+    font-size: 32px; /* Adjusted font size */
+    margin-bottom: 10px; /* Reduced margin */
+}
+
+.medical_title > p {
+    font-size: 16px; /* Adjusted font size */
+}
+
+.medical-container,
+.nails-container {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+}
+
+.medical-plan {
+    max-width: 300px; /* Adjusted max-width */
+    padding: 15px; /* Adjusted padding */
+    max-width: 80%;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.medical-icon {
+    font-size: 45px; /* Adjusted font size */
+    margin-bottom: 15px; /* Adjusted margin */
+}
+
+.plan-info {
+    font-size: 14px; /* Adjusted font size */
+    margin-bottom: 5px; /* Reduced margin */
+}
+
+.plan-title {
+    font-size: 16px; /* Adjusted font size */
+    margin-bottom: 10px; /* Reduced margin */
+}
+
+.plan-bt {
+    font-size: 14px; /* Adjusted font size */
+    line-height: 40px; /* Adjusted line height */
+    padding: 5px 10px; /* Adjusted padding */
+}
+
+/* Footer */
+.footer_info {
+    padding: 0px 20px; /* Adjusted padding */
+    font-size: 14px; /* Adjusted font size */
+}
+
+/* Nails Price Page */
+.nails_option {
+    padding: 70px 20px; /* Adjusted padding */
+    margin-top: 10px; /* Adjusted margin */
+}
+
+.nails_title > h1 {
+    font-size: 32px; /* Adjusted font size */
+    margin-bottom: 10px; /* Reduced margin */
+}
+
+.nails_title > p {
+    font-size: 16px; /* Adjusted font size */
+}
+
+.nails-plan {
+    max-width: 300px; /* Adjusted max-width */
+    padding: 15px; /* Adjusted padding */
+}
+
+.nails-icon {
+    font-size: 45px; /* Adjusted font size */
+    margin-bottom: 15px; /* Adjusted margin */
+}
+
+.nails-plan-info {
+    font-size: 14px; /* Adjusted font size */
+    margin-bottom: 5px; /* Reduced margin */
+}
+
+.nails-plan-title {
+    font-size: 16px; /* Adjusted font size */
+    margin-bottom: 10px; /* Reduced margin */
+}
+
+.nails-plan-bt {
+    font-size: 14px; /* Adjusted font size */
+    line-height: 40px; /* Adjusted line height */
+    padding: 5px 10px; /* Adjusted padding */
+}
+
+/* Contact Page */
+.information_box {
+    padding: 50px 20px; /* Adjusted padding */
+}
+
+.information_box .contact_me {
+    font-size: 25px; /* Adjusted font size */
+}
+
+.book-text {
+    padding: 20px; /* Adjusted padding */
+}
+
+.contact_image{
+    width: auto;
+    height: 30%;
+    position: absolute;
+    display: none;
+}
+
+.book-text .adress_book .adresa {
+    font-size: 45px; /* Adjusted font size */
+}
+
+.book-text .adress_book .street_book {
+    font-size: 18px; /* Adjusted font size */
+}
+
+.book-text .instagram .instagram_text {
+    font-size: 45px; /* Adjusted font size */
+}
+
+.book-text .instagram .instagram_tag {
+    font-size: 18px; /* Adjusted font size */
+}
+}
