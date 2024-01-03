@@ -443,7 +443,13 @@ body{
     padding: 90px 90px;
 }
 
+/*Maps*/
 
+.ggmaps{
+    position: relative;
+    display: flex;
+    padding: 20px 200px;
+}
 
 
 /* For screens up to 600px width */
