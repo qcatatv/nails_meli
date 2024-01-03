@@ -178,7 +178,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     color: #3C393B;
     font-size: 40px;
     margin-bottom: 15px;
@@ -188,7 +188,9 @@ body{
     position: relative;
     display: flex;
     justify-content: center;
+    font-family: 'Poppins', sans-serif;
     align-items: center;
+    font-weight: 500;
     color: #B0B0B2;
     font-size: 20px;
 }
@@ -304,6 +306,8 @@ body{
     position: relative;
     display: flex;
     justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
     align-items: center;
     color: #B0B0B2;
     font-size: 20px;
@@ -469,7 +473,7 @@ body{
 }
 
 .header > .text_hd > p {
-    font-size: 38px; /* Adjusted font size */
+    font-size: 30px; /* Adjusted font size */
     margin-top: -70px; /* Reduced margin */
 }
 
@@ -535,6 +539,7 @@ body{
 
 /* Footer */
 .footer_info {
+    display: none;
     padding: 0px 20px; /* Adjusted padding */
     font-size: 14px; /* Adjusted font size */
 }
@@ -586,11 +591,186 @@ body{
 }
 
 .information_box .contact_me {
-    font-size: 25px; /* Adjusted font size */
+    font-size: 21px; /* Adjusted font size */
 }
 
 .book-text {
+    padding: 40px 20px; /* Adjusted padding */
+}
+
+.contact_image{
+    width: auto;
+    height: 30%;
+    position: absolute;
+    display: none;
+}
+
+.book-text .adress_book .adresa {
+    font-size: 45px; /* Adjusted font size */
+}
+
+.book-text .adress_book .street_book {
+    font-size: 18px; /* Adjusted font size */
+}
+
+.book-text .instagram .instagram_text {
+    font-size: 45px; /* Adjusted font size */
+}
+
+.book-text .instagram .instagram_tag {
+    font-size: 18px; /* Adjusted font size */
+}
+}
+
+@media screen and (max-width: 430px) {
+
+    .menu {
     padding: 20px; /* Adjusted padding */
+}
+
+.menu-item a {
+    font-size: 16px; /* Adjusted font size */
+    margin-left: 11px; /* Reduced margin */
+}
+
+.logo {
+    width: 100px; /* Adjusted logo size */
+}
+
+/* Header */
+.header {
+    position: relative;
+    padding: 30px 20px; /* Adjusted padding */
+}
+
+.melisa_nails {
+    font-size: 44px; /* Adjusted font size */
+}
+
+.header > .text_hd > p {
+    font-size: 30px; /* Adjusted font size */
+    margin-top: -70px; /* Reduced margin */
+}
+
+.header_img img{
+    right: 0%;
+    width: 40%; /* Image width set to maximum */
+    height: auto;
+    margin-left: 230px;
+    margin-top: 80px;
+    z-index: -100;
+}
+
+/* Information Box - Medical Option */
+.medical_option {
+    padding: 70px 20px; /* Adjusted padding */
+    margin-top: 70px; /* Adjusted margin */
+}
+
+.medical_title > h1 {
+    font-size: 32px; /* Adjusted font size */
+    margin-bottom: 10px; /* Reduced margin */
+}
+
+.medical_title > p {
+    font-size: 14px; /* Adjusted font size */
+}
+
+.medical-container,
+.nails-container {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+}
+
+.medical-plan {
+    max-width: 300px; /* Adjusted max-width */
+    padding: 15px; /* Adjusted padding */
+    max-width: 80%;
+    margin-bottom: 20px;
+    margin-top: 15px;
+}
+
+.medical-icon {
+    font-size: 45px; /* Adjusted font size */
+    margin-bottom: 15px; /* Adjusted margin */
+}
+
+.plan-info {
+    font-size: 14px; /* Adjusted font size */
+    margin-bottom: 5px; /* Reduced margin */
+}
+
+.plan-title {
+    font-size: 16px; /* Adjusted font size */
+    margin-bottom: 10px; /* Reduced margin */
+}
+
+.plan-bt {
+    font-size: 14px; /* Adjusted font size */
+    line-height: 40px; /* Adjusted line height */
+    padding: 5px 10px; /* Adjusted padding */
+}
+
+/* Footer */
+.footer_info {
+    display: none;
+    padding: 0px 20px; /* Adjusted padding */
+    font-size: 14px; /* Adjusted font size */
+}
+
+/* Nails Price Page */
+.nails_option {
+    padding: 70px 20px; /* Adjusted padding */
+    margin-top: 10px; /* Adjusted margin */
+}
+
+.nails_title > h1 {
+    font-size: 32px; /* Adjusted font size */
+    margin-bottom: 10px; /* Reduced margin */
+}
+
+.nails_title > p {
+    font-size: 14px; /* Adjusted font size */
+}
+
+.nails-plan {
+    max-width: 300px; /* Adjusted max-width */
+    padding: 15px; /* Adjusted padding */
+}
+
+.nails-icon {
+    font-size: 45px; /* Adjusted font size */
+    margin-bottom: 15px; /* Adjusted margin */
+}
+
+.nails-plan-info {
+    font-size: 14px; /* Adjusted font size */
+    margin-bottom: 5px; /* Reduced margin */
+}
+
+.nails-plan-title {
+    font-size: 16px; /* Adjusted font size */
+    margin-bottom: 10px; /* Reduced margin */
+}
+
+.nails-plan-bt {
+    font-size: 14px; /* Adjusted font size */
+    line-height: 40px; /* Adjusted line height */
+    padding: 5px 10px; /* Adjusted padding */
+}
+
+/* Contact Page */
+.information_box {
+    padding: 50px 20px; /* Adjusted padding */
+}
+
+.information_box .contact_me {
+    font-size: 19px; /* Adjusted font size */
+}
+
+.book-text {
+    padding: 40px 20px; /* Adjusted padding */
 }
 
 .contact_image{
